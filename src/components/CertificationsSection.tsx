@@ -9,28 +9,10 @@ const certifications = [
     icon: Trophy
   },
   {
-    title: "Introduction to Prompt Engineering",
-    issuer: "IBM Online Learning",
-    type: "Certification",
-    icon: BadgeCheck
-  },
-  {
-    title: "Python Programming",
-    issuer: "IIT Bombay – Spoken Tutorial",
-    type: "Certification",
-    icon: BadgeCheck
-  },
-  {
-    title: "C Programming",
-    issuer: "IIT Bombay – Spoken Tutorial",
-    type: "Certification",
-    icon: BadgeCheck
-  },
-  {
-    title: "HTML Fundamentals",
-    issuer: "IIT Bombay – Spoken Tutorial",
-    type: "Certification",
-    icon: BadgeCheck
+    title: "Developer of TechMatch IT Solutions",
+    issuer: "TechMatch IT Solutions & Consultancy (techmatch.in)",
+    type: "Founder",
+    icon: Award
   }
 ];
 
@@ -95,6 +77,8 @@ const CertificationsSection = () => {
                   <span className={`px-3 py-1 rounded-full text-xs font-mono ${
                     cert.type === 'Finalist' 
                       ? 'bg-primary/20 text-primary' 
+                      : cert.type === 'Founder'
+                      ? 'bg-gradient-to-r from-primary/20 to-accent/20 text-accent'
                       : 'bg-accent/20 text-accent'
                   }`}>
                     {cert.type}

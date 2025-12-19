@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code2, Brain, Database, Wrench, Globe, Cpu } from 'lucide-react';
+import { Code2, Brain, Database, Globe, Cpu } from 'lucide-react';
 
 const skills = [
   {
@@ -17,7 +17,7 @@ const skills = [
   {
     category: "Web Development",
     icon: Globe,
-    items: ["React.js", "Node.js", "Express.js", "Tailwind CSS", "Bootstrap"],
+    items: ["React.js", "Node.js", "Express.js", "Bootstrap"],
     color: "from-secondary to-primary"
   },
   {
@@ -31,12 +31,6 @@ const skills = [
     icon: Database,
     items: ["SQL", "MongoDB", "Git", "VS Code"],
     color: "from-accent to-primary"
-  },
-  {
-    category: "Hardware/IoT",
-    icon: Wrench,
-    items: ["ArduPilot", "Drone Flight Control", "Serial Communication", "QGroundControl"],
-    color: "from-secondary to-accent"
   }
 ];
 

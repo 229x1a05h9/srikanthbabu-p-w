@@ -79,7 +79,7 @@ const HeroSection = () => {
             className="flex flex-wrap items-center justify-center gap-4 mb-10"
           >
             <a
-              href="https://linkedin.com/in/srikanthbabuintern"
+              href="https://www.linkedin.com/in/kanth-babu-sri"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 glass-card hover:bg-primary/10 transition-all duration-300"
@@ -97,7 +97,7 @@ const HeroSection = () => {
               <span className="font-mono text-sm">GitHub</span>
             </a>
             <a
-              href="mailto:229x1a05h9@gmail.com"
+              href="mailto:kanthbabusri@gmail.com"
               className="group flex items-center gap-2 px-6 py-3 glass-card hover:bg-primary/10 transition-all duration-300"
             >
               <Mail className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
