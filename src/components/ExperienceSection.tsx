@@ -1,7 +1,20 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Award, Calendar, ExternalLink } from 'lucide-react';
+import { Briefcase, Award, Calendar, ExternalLink, Rocket } from 'lucide-react';
 
 const experiences = [
+  {
+    title: "Founder & Developer",
+    company: "TechMatch IT Solutions & Consultancy",
+    period: "2024 - Present",
+    type: "startup",
+    link: "https://github.com/LABBISRIKANTHBABU/TechMatch",
+    highlights: [
+      "Founded TechMatch.in - an IT consultancy and educational admission counseling platform",
+      "Built SEO-optimized web solutions for students and businesses",
+      "Developed digital solutions for career guidance and technical consulting",
+      "Managing end-to-end project delivery and client relationships"
+    ]
+  },
   {
     title: "Full Stack Web Development Internship",
     company: "InturnsUp",
@@ -56,9 +69,11 @@ const ExperienceSection = () => {
               className="project-card p-8"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
-                <div className={`p-4 rounded-2xl ${exp.type === 'achievement' ? 'bg-accent/20' : 'warm-gradient'} shrink-0`}>
+                <div className={`p-4 rounded-2xl ${exp.type === 'achievement' ? 'bg-accent/20' : exp.type === 'startup' ? 'bg-gradient-to-br from-primary to-accent' : 'warm-gradient'} shrink-0`}>
                   {exp.type === 'achievement' ? (
                     <Award className="w-8 h-8 text-accent" />
+                  ) : exp.type === 'startup' ? (
+                    <Rocket className="w-8 h-8 text-primary-foreground" />
                   ) : (
                     <Briefcase className="w-8 h-8 text-primary-foreground" />
                   )}
@@ -67,8 +82,13 @@ const ExperienceSection = () => {
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
                     <div>
-                      <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground">
+                      <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground flex items-center gap-2">
                         {exp.title}
+                        {exp.link && (
+                          <a href={exp.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                            <ExternalLink className="w-5 h-5" />
+                          </a>
+                        )}
                       </h3>
                       <p className="text-primary font-body text-lg">
                         {exp.company}
