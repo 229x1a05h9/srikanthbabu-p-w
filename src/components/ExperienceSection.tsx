@@ -3,11 +3,11 @@ import { Briefcase, Award, Calendar, ExternalLink, Rocket } from 'lucide-react';
 
 const experiences = [
   {
-    title: "Founder & Developer",
+    title: "Developer",
     company: "TechMatch IT Solutions & Consultancy",
-    period: "2024 - Present",
+    period: "2025 - Present",
     type: "startup",
-    link: "https://github.com/LABBISRIKANTHBABU/TechMatch",
+    link: "http://techmatch.in",
     highlights: [
       "Founded TechMatch.in - an IT consultancy and educational admission counseling platform",
       "Built SEO-optimized web solutions for students and businesses",

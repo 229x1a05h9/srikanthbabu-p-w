@@ -32,7 +32,11 @@ const HeroSection = () => {
             <div className="absolute inset-0 rounded-full warm-gradient animate-rotate-slow opacity-50 blur-xl" />
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 animate-pulse-glow">
               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <span className="font-display text-5xl md:text-6xl gradient-text font-bold">SL</span>
+                <img 
+                  src="https://media.licdn.com/dms/image/v2/D5635AQEepAQS8XqKwQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1707789386578?e=1766761200&v=beta&t=iHd1Yy05k5Zomu7VBFdwVASi4wTCHfHD8duZzY525mA" 
+                  alt="Srikanth Babu Labbi" 
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
           </motion.div>
@@ -56,7 +60,7 @@ const HeroSection = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
           >
-            <span className="text-primary">AI Solutions Architect</span> | Full-Stack Developer | Drone Automation Specialist
+            AI Solutions Architect| Full-Stack Developer | AI Enthusiast
           </motion.p>
 
           {/* Bio */}
@@ -66,8 +70,8 @@ const HeroSection = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="font-body text-base md:text-lg text-muted-foreground/80 mb-10 max-w-3xl mx-auto"
           >
-            Innovating at the intersection of Artificial Intelligence and hardware. 
-            Founder of <span className="text-accent">TechMatch.in</span>. Passionate about building 
+            Innovating at the intersection of Artificial Intelligence and software. 
+            Designer and Developer of <span className="text-accent">TechMatch.in</span>. Passionate about building 
             smart cities, voice-controlled systems, and scalable web applications.
           </motion.p>
 

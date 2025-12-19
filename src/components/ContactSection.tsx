@@ -43,7 +43,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-mono">Email</p>
-                  <p className="text-foreground font-body">229x1a05h9@gmail.com</p>
+                  <p className="text-foreground font-body">kanthbabusri@gmail.com</p>
                 </div>
               </a>
 
@@ -79,7 +79,7 @@ const ContactSection = () => {
               
               <div className="space-y-4">
                 <a
-                  href="https://linkedin.com/in/srikanthbabuintern"
+                  href="https://www.linkedin.com/in/kanth-babu-sri"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl bg-[#0077B5]/10 hover:bg-[#0077B5]/20 transition-colors group"
@@ -89,7 +89,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-foreground font-body font-semibold">LinkedIn</p>
-                    <p className="text-sm text-muted-foreground font-mono">@srikanthbabuintern</p>
+                    <p className="text-sm text-muted-foreground font-mono">@kanthbabusri</p>
                   </div>
                   <Send className="w-4 h-4 text-muted-foreground group-hover:text-[#0077B5] transition-colors" />
                 </a>
@@ -123,10 +123,10 @@ const ContactSection = () => {
           className="text-center mt-12 pt-8 border-t border-border/50"
         >
           <p className="text-muted-foreground font-mono text-sm">
-            © 2024 Srikanth Babu Labbi. Built with passion and code.
+            © 2025 Srikanth Babu Labbi. Built with passion and code.
           </p>
           <p className="text-primary font-mono text-xs mt-2">
-            Founder of TechMatch.in | AI Solutions Architect
+            Developer of TechMatch.in | AI Solutions Architect
           </p>
         </motion.div>
       </div>

@@ -111,7 +111,7 @@ const LinkedInSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://linkedin.com/in/srikanthbabuintern"
+            href="https://www.linkedin.com/in/kanth-babu-sri"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 warm-gradient text-primary-foreground font-display font-semibold rounded-xl hover:scale-105 transition-transform duration-300 glow-orange"
