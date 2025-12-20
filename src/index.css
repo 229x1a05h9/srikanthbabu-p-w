@@ -6,52 +6,53 @@
 
 @layer base {
   :root {
-    /* Dark Theme with Orange/Yellow Accents */
-    --background: 0 0% 8%;
-    --foreground: 40 10% 90%;
+    /* Dark Theme with Green Accents */
+    --background: 0 0% 5%;
+    --foreground: 120 20% 92%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 40 10% 90%;
+    --card: 0 0% 8%;
+    --card-foreground: 120 20% 92%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 40 10% 90%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 120 20% 92%;
 
-    /* Orange/Yellow Primary */
-    --primary: 28 100% 58%;
-    --primary-foreground: 0 0% 5%;
+    /* Green Primary */
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 2%;
 
-    /* Darker Orange Secondary */
-    --secondary: 20 90% 45%;
-    --secondary-foreground: 40 10% 95%;
+    /* Darker Green Secondary */
+    --secondary: 152 65% 30%;
+    --secondary-foreground: 120 20% 95%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 120 10% 55%;
 
-    /* Yellow Accent */
-    --accent: 45 100% 55%;
-    --accent-foreground: 0 0% 5%;
+    /* Light Green/Mint Accent */
+    --accent: 160 60% 45%;
+    --accent-foreground: 0 0% 2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 28 100% 58%;
+    --border: 120 15% 15%;
+    --input: 120 15% 15%;
+    --ring: 142 70% 45%;
 
     --radius: 0.75rem;
 
-    /* Custom Colors */
-    --orange-glow: 28 100% 58%;
-    --yellow-glow: 45 100% 55%;
-    --warm-gradient-start: 35 100% 60%;
-    --warm-gradient-end: 15 100% 50%;
+    /* Custom Green Colors */
+    --green-glow: 142 70% 50%;
+    --green-light: 142 60% 60%;
+    --green-dark: 152 80% 25%;
+    --mint: 160 50% 50%;
+    --emerald: 152 70% 35%;
 
     /* Glassmorphism */
     --glass-bg: 0 0% 100% / 0.05;
-    --glass-border: 0 0% 100% / 0.1;
+    --glass-border: 120 50% 50% / 0.1;
 
     /* Shadows */
-    --shadow-glow: 0 0 60px hsl(28 100% 58% / 0.3);
+    --shadow-glow: 0 0 60px hsl(142 70% 45% / 0.3);
     --shadow-soft: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
   }
 }
@@ -73,21 +74,21 @@
 @layer components {
   /* Glassmorphism Card */
   .glass-card {
-    @apply bg-card/50 backdrop-blur-xl border border-white/10 rounded-2xl;
+    @apply bg-card/50 backdrop-blur-xl border border-primary/10 rounded-2xl;
     box-shadow: 
       0 25px 50px -12px hsl(0 0% 0% / 0.5),
-      inset 0 1px 0 0 hsl(0 0% 100% / 0.1);
+      inset 0 1px 0 0 hsl(120 50% 50% / 0.1);
   }
 
   /* Gradient Text */
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%);
+    background-image: linear-gradient(135deg, hsl(var(--mint)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%);
   }
 
-  /* Warm Gradient Background */
+  /* Green Gradient Background */
   .warm-gradient {
-    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%);
+    background: linear-gradient(135deg, hsl(var(--mint)) 0%, hsl(var(--primary)) 50%, hsl(var(--secondary)) 100%);
   }
 
   /* Glow Effect */
@@ -112,7 +113,7 @@
   .neon-border::before {
     content: '';
     @apply absolute inset-0 rounded-2xl;
-    background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)), hsl(var(--secondary)));
+    background: linear-gradient(135deg, hsl(var(--mint)), hsl(var(--primary)), hsl(var(--secondary)));
     padding: 1px;
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -122,7 +123,7 @@
 
   /* Timeline */
   .timeline-line {
-    background: linear-gradient(180deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--secondary)) 100%);
+    background: linear-gradient(180deg, hsl(var(--primary)) 0%, hsl(var(--mint)) 50%, hsl(var(--secondary)) 100%);
   }
 
   .timeline-dot {
