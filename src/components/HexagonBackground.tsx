@@ -10,13 +10,14 @@ const HexagonBackground = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
+    // Green color palette
     const colorPalette = [
-      "rgba(196, 196, 193, 0.65)",
-      "rgba(255, 251, 12, 0.92)",
-      "rgba(238, 241, 38, 0.45)",
-      "rgba(113, 125, 74, 0.4)",
-      "rgba(255, 126, 57, 0.78)",
-      "rgba(75, 96, 41, 0.45)",
+      "rgba(180, 180, 175, 0.65)",
+      "rgba(34, 197, 94, 0.85)",
+      "rgba(74, 222, 128, 0.55)",
+      "rgba(22, 163, 74, 0.6)",
+      "rgba(134, 239, 172, 0.45)",
+      "rgba(20, 83, 45, 0.55)",
     ];
 
     interface Node {
@@ -137,7 +138,7 @@ const HexagonBackground = () => {
 
       ctx.save();
       ctx.globalAlpha = 0.7;
-      ctx.fillStyle = "#141414";
+      ctx.fillStyle = "#0d0d0d";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.restore();
 
@@ -164,7 +165,7 @@ const HexagonBackground = () => {
         node.y = baseY + (dy / dist) * wave * strength;
       });
 
-      ctx.strokeStyle = "rgba(90, 90, 90, 0.2)";
+      ctx.strokeStyle = "rgba(34, 197, 94, 0.15)";
       ctx.lineWidth = 1;
       state.connections.forEach(([a, b]) => {
         ctx.beginPath();

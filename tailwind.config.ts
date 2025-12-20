@@ -52,12 +52,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        orange: {
-          glow: "hsl(var(--orange-glow))",
+        green: {
+          glow: "hsl(var(--green-glow))",
+          light: "hsl(var(--green-light))",
+          dark: "hsl(var(--green-dark))",
         },
-        yellow: {
-          glow: "hsl(var(--yellow-glow))",
-        },
+        mint: "hsl(var(--mint))",
+        emerald: "hsl(var(--emerald))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,10 +80,10 @@ export default {
         },
         "pulse-glow": {
           "0%, 100%": { 
-            boxShadow: "0 0 20px hsl(28 100% 58% / 0.4), 0 0 40px hsl(28 100% 58% / 0.2)" 
+            boxShadow: "0 0 20px hsl(142 70% 45% / 0.4), 0 0 40px hsl(142 70% 45% / 0.2)" 
           },
           "50%": { 
-            boxShadow: "0 0 40px hsl(28 100% 58% / 0.6), 0 0 80px hsl(28 100% 58% / 0.4)" 
+            boxShadow: "0 0 40px hsl(142 70% 45% / 0.6), 0 0 80px hsl(142 70% 45% / 0.4)" 
           },
         },
         "shimmer": {
@@ -118,9 +119,9 @@ export default {
         "fade-in": "fade-in 1s ease-out forwards",
       },
       backgroundImage: {
-        "warm-gradient": "linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(28 100% 58%) 50%, hsl(20 90% 45%) 100%)",
-        "dark-gradient": "radial-gradient(ellipse at top, hsl(0 0% 15%) 0%, hsl(0 0% 8%) 100%)",
-        "shimmer-gradient": "linear-gradient(90deg, transparent, hsl(28 100% 58% / 0.1), transparent)",
+        "green-gradient": "linear-gradient(135deg, hsl(160 50% 50%) 0%, hsl(142 70% 45%) 50%, hsl(152 65% 30%) 100%)",
+        "dark-gradient": "radial-gradient(ellipse at top, hsl(0 0% 12%) 0%, hsl(0 0% 5%) 100%)",
+        "shimmer-gradient": "linear-gradient(90deg, transparent, hsl(142 70% 45% / 0.1), transparent)",
       },
     },
   },
