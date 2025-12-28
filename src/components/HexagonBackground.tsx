@@ -10,14 +10,14 @@ const HexagonBackground = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Green color palette
+    // Orange color palette - #FFA500 variants
     const colorPalette = [
-      "rgba(180, 180, 175, 0.65)",
-      "rgba(34, 197, 94, 0.85)",
-      "rgba(74, 222, 128, 0.55)",
-      "rgba(22, 163, 74, 0.6)",
-      "rgba(134, 239, 172, 0.45)",
-      "rgba(20, 83, 45, 0.55)",
+      "rgba(180, 180, 175, 0.5)",
+      "rgba(255, 165, 0, 0.85)",
+      "rgba(255, 200, 100, 0.55)",
+      "rgba(255, 140, 0, 0.65)",
+      "rgba(255, 215, 0, 0.5)",
+      "rgba(200, 120, 0, 0.6)",
     ];
 
     interface Node {
@@ -165,7 +165,7 @@ const HexagonBackground = () => {
         node.y = baseY + (dy / dist) * wave * strength;
       });
 
-      ctx.strokeStyle = "rgba(34, 197, 94, 0.15)";
+      ctx.strokeStyle = "rgba(255, 165, 0, 0.15)";
       ctx.lineWidth = 1;
       state.connections.forEach(([a, b]) => {
         ctx.beginPath();
