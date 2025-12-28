@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Phone, ChevronDown } from 'lucide-react';
+import profilePic from '@/assets/profile-pic.jpg';
 
 const HeroSection = () => {
   return (
@@ -33,7 +34,7 @@ const HeroSection = () => {
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 animate-pulse-glow">
               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                 <img 
-                  src="https://media.licdn.com/dms/image/v2/D5635AQEepAQS8XqKwQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1707789386578?e=1766761200&v=beta&t=iHd1Yy05k5Zomu7VBFdwVASi4wTCHfHD8duZzY525mA" 
+                  src={profilePic} 
                   alt="Srikanth Babu Labbi" 
                   className="w-full h-full object-cover object-center"
                 />
